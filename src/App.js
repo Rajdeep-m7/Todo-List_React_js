@@ -50,7 +50,7 @@ function App() {
                     <span>{task}</span>
                     <span>{new Date().toLocaleDateString()}</span>
                     <button className="delete-btn"
-                    onClick={handleDelete}
+                    onClick={()=>handleDelete(index)}
                     >
                         x
                     </button>
